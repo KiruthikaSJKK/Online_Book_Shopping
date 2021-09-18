@@ -1,0 +1,58 @@
+/*popular books*/
+.popularity{
+  margin-top: -15px;
+  background-color: rgb(230, 228, 228);
+  margin-left: 7px;
+  width:75.4%;
+  height:255px;
+  padding-left: 30px;
+}
+.popularity .bordering-image{
+  margin-top: -25px;
+  float:left;
+  background-color:white;
+  width:14%;
+  height:200px;
+  margin-left: 15px;
+}
+.bordering-image img{
+  padding:3px;
+  width:95%;
+  height:150px;
+}
+.bordering-image p{
+  padding:3px;
+  line-height: 15px;
+}
+.bordering-image button{
+  font-size: 7px;
+  padding: -2px;
+  color:white;
+  border-radius: 3px;
+  background-color: green;
+}
+.percentimage img{
+  position: absolute;
+  width:98.6%;
+  height:180px;
+  padding-left: 7px;
+  margin-top: 10px;
+}
+
+.childpopularity{
+  margin-top: 200px;
+  background-color: rgb(230, 228, 228);
+  margin-left: 7px;
+  width:95.8%;
+  height:255px;
+  padding-left: 30px;
+}
+.childpopularity .bordering-image{
+  margin-top: -25px;
+  float:left;
+  background-color:white;
+  width:12%;
+  height:200px;
+  margin-left: 15px;
+}
+

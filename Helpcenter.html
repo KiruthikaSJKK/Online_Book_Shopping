@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ReBOO daily</title>
+    <link rel="stylesheet" type="text/css" href="homecss.css">
+    <style>
+      #helpcenterhead{
+        position: absolute;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top:60px;
+        color: rgb(68, 68, 68);
+        line-height: 30px;
+        padding:0px 10px;
+      }
+      #helpcenteruse{
+        position: absolute;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top:100px;
+        color:rgb(72, 70, 70);
+        padding:0px 10px;
+        text-align: justify;
+      }
+      #helpcenterimg{
+        float: right;
+        width:700px;
+        height:400px;
+        margin-top: 200px;
+        padding:0px 10px;
+      }
+      .issues{
+        position: absolute;
+        background-color: rgb(223, 238, 187);
+        width:340px;
+        height:120px;
+        margin-top: 200px;
+        margin-left: 10px;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .issueslist{
+        position: absolute;
+        background-color: rgb(223, 238, 187);
+        width:325px;
+        height:264px;
+        margin-top: 335px;
+        margin-left: 10px;
+        padding-left: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        line-height: 15px;
+      }
+      .issueslist i{
+        font-size: 14px;
+      }
+      
+    </style>
+  </head>
+  <body style="margin: 0;">
+    <div class="home1">
+      <a href="Homepage.html" id="navtab">My Profile</a>
+      <a href="Helpcenter.html" id="navtab">Help center</a>
+      <a href="Aboutus.html" id="navtab">About us</a>
+      <a href="Homepageprofile.html" id="navtab">Home</a>
+      <img src="image/searchicon.png" id="searchlogo" />
+      <input type="search" id="searchtab" placeholder="Search........"/>
+      <img src="image/catlogo.png" id="Weblogo" style="width:65px; height:60px;"/>
+      <a id="Webtitle">WHIGO</a>
+    </div>
+    <p id="helpcenterhead"><b>ReBOO<br/>Help Center | 24x7 Customer Care Support</b></p>
+    <br/>
+    <p id="helpcenteruse">The ReBOO Help Centre page lists out various types of issues that you may have encountered so that there can be quick resolution and you can go back to shopping online. For example, you can get more information regarding order tracking, delivery date changes, help with returns (and refunds), and much more. The ReBOO Help Centre also lists out more information that you may need regarding payment, shopping, and more.</p>
+    <img id="helpcenterimg" src="image/helpcenterimg2.jpeg"/>
+    <div class="issues">
+      <p><i><b>How can we help?</b></i></p>
+      <input type="search" style="height: 25px; width:220px;"/>
+      <img src="image/searchicon.png" width="10px" height="10px" style="margin-right: 10px;"/>
+    </div>
+    <div class="issueslist">
+     <p>What issue are you facing?</p>  
+      <input type="radio" id="track" name="issues">
+      <label for="track">I want to track my order<br/>
+        &emsp;&ensp;<i>Check order status & call the delivery agent</i><br/></input><br/></label>
+      <input type="radio" id="manage" name="issues">
+      <label for="manage">I want to manage my order<br/>
+        &emsp;&ensp;<i>Cancel, change delivery date & address</i><br/></input><br/></label>
+      <input type="radio" id="return" name="issues">
+      <label for="return">I want help with returns & refunds<br/>
+        &emsp;&ensp;<i>Manage and track returns</i><br/></input><br/></label>
+      <input type="radio" id="other" name="issues">
+      <label for="other">I want help with other issues<br/>
+        &emsp;&ensp;<i>Offers, payment, & all other issues</i><br/></input><br/></label>
+    </div>
+
+    </body>
+</html>

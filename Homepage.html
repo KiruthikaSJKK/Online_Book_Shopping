@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ReBOO daily</title>
+    <link rel="stylesheet" type="text/css" href="HomeCSS.css">
+    <link rel="stylesheet" type="text/css" href="PopularBooks.css">
+    <style>
+      #scrollImage{
+        padding-left:0px;
+        margin-top:50px;
+        z-index: auto;
+      }
+      #topOffer{
+        top:0%;
+        position: inline;
+        background-color: rgba(209, 179, 9, 0.266);
+        text-align: center;
+        margin-top:5px;
+        width:98.8%;
+        height:35px;
+        margin-left:6px;
+        padding:5px 0px;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      /*Book Lists*/
+      .Booklist{
+        position: absolute;
+        color: white;
+        text-align: center;
+        margin-top: -7px;
+        right:0px;
+        margin-right: 8px;
+        width:210px;
+        height:763px;
+        background-color: rgb(73, 98, 114);
+        font-size: 15px;
+        padding:10px 0px;
+      }  
+      #seeall{
+        position: absolute;
+        margin-top: -50px;
+        padding-left: 725px;
+        font-size: 15px;
+        color:blue;
+      }
+      #seeallchild{
+        position: absolute;
+        margin-top: -50px;
+        padding-left: 925px;
+        font-size: 15px;
+        color:blue;
+      }
+    </style>
+  </head>
+
+
+  <body style="margin: 0;">
+    <div class="home1">
+      <a href="Loginpage.html" id="navtab">Login</a>
+      <a href="Helpcenter.html" id="navtab">Help center</a>
+      <a href="Aboutus.html" id="navtab">About us</a>
+      <a href="Homepage.html" id="navtab">Home</a>
+      <img src="image/searchicon.png" id="searchlogo" />
+      <input type="search" id="searchtab" placeholder="Search........"/>
+      <img src="image/catlogo.png" id="Weblogo" style="width:65px; height:60px;"/>
+      <a id="Webtitle">ReBOO</a>
+    </div>
+    <img id="scrollImage" src="image/scroll1.jpg" width="100%" height="280px"/>
+    <div class="leftdiv"><!--leftside bar-->
+      <table class="tablecontent">
+        <tr><td>New Arrivals
+          <div class="filteroptions">
+            <a href="#">Last 30 Days</a>
+            <a href="#">Last 90 Days</a>
+            <a href="#">Last 150 Days</a>
+          </div>
+        </td></tr>
+        <tr><td>Best Sellers
+          <div class="filteroptions">
+            <a href="#">Cloudtail India</a>
+            <a href="#">PeacockBooks</a>
+            <a href="#">ReproIndia</a>
+            <a href="#">Book eHub</a>
+            <a href="#">Book Centre</a>
+            <a href="#">All India Book House</a>
+            <a href="#">Speedy Books</a>
+          </div>
+        </td></tr>
+        <tr><td>Format
+          <div class="filteroptions">
+            <a href="#">Hardcover</a>
+            <a href="#">Paperback</a>
+            <a href="#">Bundle</a>
+            <a href="#">Loose Leaf</a>
+            <a href="#">Audiobook</a>
+            <a href="#">Kindle eBooks</a>
+          </div>
+        </td></tr>
+        <tr><td>Customer Review
+          <div class="filteroptions">
+            <a href="#">4&#9733 & Above</a>
+            <a href="#">3&#9733 & Above</a>
+            <a href="#">2&#9733 & Above</a>
+            <a href="#">1&#9733 & Above</a>
+          </div>
+        </td></tr>
+        <tr><td>Author
+          <div class="filteroptions">
+            <a href="#">Rajiv Ahir</a>
+            <a href="#">Stephen Hawking</a>
+            <a href="#">Josy Joseph</a>
+            <a href="#">Arihant Experts</a>
+            <a href="#">Karl Marx</a>
+            <a href="#">Friedrich Engels</a>
+          </div>
+        </td></tr>
+        <tr><td>Item Condition
+          <div class="filteroptions">
+            <a href="#">New</a>
+            <a href="#">Used</a>
+          </div>
+        </td></tr>
+        <tr><td>Indian Languages
+          <div class="filteroptions">
+            <a href="#">English</a>
+            <a href="#">Tamil</a>
+            <a href="#">Hindi</a>
+            <a href="#">Kanada</a>
+            <a href="#">Malayalam</a>
+            <a href="#">Marathi</a>
+          </div>
+        </td></tr>
+        <tr><td>Price
+          <div class="filteroptions">
+            <a href="#">Under 100</a>
+            <a href="#">100-200</a>
+            <a href="#">200-500</a>
+            <a href="#">500-1000</a>
+            <a href="#">1000-2000</a>
+            <a href="#">Over 2000</a>
+          </div>
+        </td></tr>
+        <tr><td>Deals & Discount
+          <div class="filteroptions">
+            <a href="#">50% or more</a>
+            <a href="#">35% or more</a>
+            <a href="#">25% or more</a>
+            <a href="#">10% or more</a>
+          </div>
+        </td></tr>
+       </table>
+    </div>
+    <p id="topOffer"><b>Top offers & Huge discounts Upto 40% off Bookstore</b><br/>
+    Free Delivery on Your First Order</p>
+    </p>
+
+    <div class="Booklist">
+      <a href="Books/ActionandAdventure.html"><div class="fsh" >Action and Adventure</div></a>
+      <a href="Books/Classics.html"><div class="fs1" >Classics</div></a>
+      <a href="Books/ComicorGraphicNovel.html"><div class="fs2" >Comic or Graphic Novel</div></a>
+      <a href="Books/DetectiveandMystery.html"><div class="fs3" >Detective and Mystery</div></a>
+      <a href="Books/Fantasy.html"><div class="fs4" >Fantasy</div></a>
+      <a href="Books/HistoricalFiction.html"><div class="fs5">Historical Fiction</div></a>
+      <a href="Books/Horror.html"><div class="fs6">Horror</div></a>
+      <a href="Books/LiteraryFiction.html"><div class="fs7">Literary Fiction</div></a>
+      <a href="Books/Romance.html"><div class="fs8">Romance</div></a>
+      <a href="Books/ScienceFiction.html"><div class="fs8">Science Fiction</div></a>
+      <a href="Books/ShortStories.html"><div class="fs8">Short Stories</div></a>
+      <a href="Books/SuspenseandThrillers.html"><div class="fs8">Suspense and Thrillers</div></a>
+      <a href="Books/WomensFiction.html"><div class="fs8">Women's Fiction</div></a>
+      <a href="Books/BiographiesAutobiographies.html"><div class="fs8">Biographies & Autobiographies</div></a>
+      <a href="Books/Cookbooks.html"><div class="fs8">Cookbooks</div></a>
+      <a href="Books/Essays.html"><div class="fs8">Essays</div></a>
+      <a href="Books/History.html"><div class="fs8" >History</div></a>
+      <a href="Books/Memoir.html"><div class="fs8">Memoir</div></a>
+      <a href="Books/Poetry.html"><div class="fs8" >Poetry</div></a>
+      <a href="Books/Self-help.html"><div class="fs8">Self-Help</div></a>
+      <a href="Books/TrueCrime.html"><div class="fs8">True Crime</div></a>
+    </div>
+
+
+    <!--Popular Books-->
+    <div class="popularity">
+      <p style="font-size: x-large; padding-left: 15px; padding-top: 10px; padding-bottom: 5px;">Popular Books</p>
+      <a href="Books/popularbook.html"><p id="seeall"><u>See All</u></p></a>
+      <div class="bordering-image">
+        <img src="image/trend1.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>I Still Think About You.</b><br/>
+        <button type="button">4.3&#9733</button> (3,127)</p>
+      </div>
+      <div class="bordering-image">
+        <img src="image/trend2.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>You are My Reason to Smile.</b><br/>
+        <button type="button" >4.4&#9733</button>
+        (5,285)</p>
+      </div>
+      <div class="bordering-image">
+        <img src="image/trend3.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>The Psychology of Money.</b>&emsp;<br/>
+        <button type="button" >4.6&#9733</button>
+        (3,505)</p>
+      </div>
+      <div class="bordering-image">
+        <img src="image/trend4.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>Wake Up, Life is Calling.</b><br/>
+        <button type="button">4.5&#9733</button>
+        (10,086)</p>
+      </div>
+      <div class="bordering-image">
+        <img src="image/trend5.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>Her Last Wish.</b><br/>
+        <button type="button" >4.5&#9733</button>
+        (11,495)</p>
+      </div>
+      <div class="bordering-image">
+        <img src="image/trend6.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>Everything I Never Told You.</b><br/>
+        <button type="button" >4.5&#9733</button>
+        (3,035)</p>
+      </div>
+    </div>
+
+
+    <!--Non Fiction Books-->
+    <div class="popularity">
+      <p style="font-size: x-large; padding-left: 15px; padding-top: 10px; padding-bottom: 5px;">Non Fiction Books (Best Sellers)</p>
+      <a href="Books/nonfictionbook.html"><p id="seeall"><u>See All</u></p></a>
+      <div class="bordering-image">
+        <img src="image/nonfic1.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>Wise & Otherwise.</b><br/>
+        <button type="button">4.5&#9733</button> (6,071)</p>
+      </div>
+      <div class="bordering-image">
+        <img src="image/nonfic2.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>I've Never Been (Un)Happier.</b><br/>
+        <button type="button" >4.3&#9733</button>
+        (1,849)</p>
+      </div>
+      <div class="bordering-image">
+        <img src="image/nonfic3.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>The Power of Your Subconscious Mind.</b>&emsp;<br/>
+        <button type="button" >4.5&#9733</button>
+        (41,056)</p>
+      </div>
+      <div class="bordering-image">
+        <img src="image/nonfic4.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>Why Not Me?</b><br/>
+        <button type="button">4.6&#9733</button>
+        (4,982)</p>
+      </div>
+      <div class="bordering-image">
+        <img src="image/nonfic5.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>Three Thousand Stitches.</b><br/>
+        <button type="button" >4.6&#9733</button>
+        (8,030)</p>
+      </div>
+      <div class="bordering-image">
+        <img src="image/nonfic6.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>Why I am am Atheist and Other Works.</b><br/>
+        <button type="button" >4.6&#9733</button>
+        (5,650)</p>
+      </div>
+    </div>
+
+    <!--Fiction Books-->
+    <div class="popularity">
+      <p style="font-size: x-large; padding-left: 15px; padding-top: 10px; padding-bottom: 5px;">Fiction Books (Best Sellers)</p>
+      <a href="Books/fictionbook.html"><p id="seeall"><u>See All</u></p></a>
+      <div class="bordering-image">
+        <img src="image/fic1.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>One Arranged Murder.</b><br/>
+        <button type="button">4.6&#9733</button> (19,181)</p>
+      </div>
+      <div class="bordering-image">
+        <img src="image/fic2.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>The Blue Umbrella.</b><br/>
+        <button type="button" >4.5&#9733</button>
+        (14,434)</p>
+      </div>
+      <div class="bordering-image">
+        <img src="image/fic3.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>Wish I Could Tell You.</b>&emsp;<br/>
+        <button type="button" >4.5&#9733</button>
+        (10,081)</p>
+      </div>
+      <div class="bordering-image">
+        <img src="image/fic4.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>Wake Up, Life is Calling.</b><br/>
+        <button type="button">4.5&#9733</button>
+        (10,086)</p>
+      </div>
+      <div class="bordering-image">
+        <img src="image/fic5.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>Something I Never Told You.</b><br/>
+        <button type="button" >4.5&#9733</button>
+        (10,139)</p>
+      </div>
+      <div class="bordering-image">
+        <img src="image/fic6.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>One Indian Girl.</b><br/>
+        <button type="button" >4.3&#9733</button>
+        (47,769)</p>
+      </div>
+    </div>
+    <div class="percentimage">
+    <img src="image/kidsbooks.png">
+    </div>
+
+    <!--Children Books-->
+    <div class="childpopularity">
+      <p style="font-size: x-large; padding-left: 15px; padding-top: 10px; padding-bottom: 5px;">Children Books</p>
+      <a href="Books/childrenbook.html"><p id="seeallchild"><u>See All</u></p></a>
+      <div class="bordering-image">
+        <img src="image/childboo1.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>The Magic of the Lost Temple.</b><br/>
+        <button type="button">4.6&#9733</button> (3,785)</p>
+      </div>
+      <div class="bordering-image">
+        <img src="image/childboo2.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>Great Stories for Children.</b><br/>
+        <button type="button" >4.5&#9733</button>
+        (11,154)</p>
+      </div>
+      <div class="bordering-image">
+        <img src="image/childboo3.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>Creative Crayons Super Pack Books.</b>&emsp;<br/>
+        <button type="button" >4.6&#9733</button>
+        (1,485)</p>
+      </div>
+      <div class="bordering-image">
+        <img src="image/childboo4.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>Harry Potter and the Chamber of Secrets.</b><br/>
+        <button type="button">4.7&#9733</button>
+        (9,066)</p>
+      </div>
+      <div class="bordering-image">
+        <img src="image/childboo5.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>101 Bedtime Stories.</b><br/>
+        <button type="button" >4.2&#9733</button>
+        (1,242)</p>
+      </div>
+      <div class="bordering-image">
+        <img src="image/childboo6.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>Short Stories from Panchatantra.</b><br/>
+        <button type="button" >4.2&#9733</button>
+        (298)</p>
+      </div>
+      <div class="bordering-image">
+        <img src="image/childboo7.jpeg">
+        <p style="font-size: 10px; margin-top:-10px;"><b>Princesses Coloring Sticker Activity Book.</b><br/>
+        <button type="button" >4.3&#9733</button>
+        (47,769)</p>
+      </div>
+    </div>
+    <footer>
+      <p>@ All Rights Reserved 2021-2022 Designed by Kiruthikasjkk</p>
+      <img src="image/fblogo.png" width="20px" height="20px">
+      <img src="image/linkedinlogo.png" width="20px" height="20px">
+      <img src="image/youtubelogo.png" width="20px" height="20px">
+    </footer>
+    <script>
+      setInterval(changeImage,2000);
+      var newImage=document.getElementById("scrollImage");
+      var imageArray=["image/scroll2.jpg","image/scroll3.jpg","image/scroll4.jpg","image/scroll5.jpg","image/scroll6.jpg","image/scroll7.jpg","image/scroll8.jpg","image/scroll9.jpg","image/scroll10.jpg", "image/scroll11.jpg","image/scroll12.jpg","image/scroll13.jpg","image/scroll14.jpg","image/scroll15.jpg"];
+      var imageIndex=0;
+      function changeImage(){
+        newImage.setAttribute("src",imageArray[imageIndex]);
+        imageIndex++;
+        if(imageIndex>=imageArray.length)
+        {
+          imageIndex=0;
+        }
+      }
+    </script>
+  </body>
+</html>

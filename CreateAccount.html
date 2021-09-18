@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ReBOO daily</title>
+    <link rel="stylesheet" type="text/css" href="HomeCSS.css">
+   <style>
+       .formid{
+        color:white;
+        margin-top: 50px;
+        padding-top:20px;
+        margin-left:100px;
+      }
+      .formid img{
+        width: 60px;
+        height: 60px;
+        padding-right: 80px;
+      }
+      .formid label{
+        position: absolute;
+        left:100px;
+      }
+      .formid input{
+        width:25%;
+        height:23px;
+      }
+      body{
+        background-image: url('image/patterned4.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+     #BookQuote{
+       color:white;
+       font-size: 40px;
+       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       position: absolute;
+       float:right;
+       margin-left: 450px;
+       top:150px;
+     }
+    </style>
+  </head>
+  <body style="margin:0;">
+    <div class="home1">
+      <a href="Loginpage.html" id="navtab">Login</a>
+      <a href="Helpcenter.html" id="navtab">Help center</a>
+      <a href="Aboutus.html" id="navtab">About us</a>
+      <a href="Homepage.html" id="navtab">Home</a>
+      <img src="image/searchicon.png" id="searchlogo" />
+      <input type="search" id="searchtab" placeholder="Search........"/>
+      <img src="image/catlogo.png" id="Weblogo" style="width:65px; height:60px;"/>
+      <a id="Webtitle">ReBOO</a>
+    </div>
+
+    
+    <form class="formid">
+      <p style="font-weight:bold; padding-left:50px;">CREATE &nbsp ACCOUNT</p>
+      <label>Mobile Number</label><br/>
+      <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"required/><br/><br>
+      <label>Email-id</label><br/>
+      <input type="email" required/><br/><br>
+      <label>Password</label><br/>
+      <input type="password" required/><br/><br>
+      <label>Conform Password</label><br/>
+      <input type="password" required/><br/><br>  
+     <a href="LoginPage.html" style="padding-left:80px;"><button type="button" style="background-color: rgb(116, 172, 60); color:white" onclick="myAccount()">Register</button></a>
+      <p style="padding-left:35px;">Already have an account?</p>
+      <a href="Loginpage.html" style="padding-left:90px; color:rgb(141, 185, 51);">Login</a>
+    </form>
+    <pre id="BookQuote">
+     "A Book is a gift 
+        you can open 
+      again and again."<pre style="font-size: 15px; padding-left: 300px;">-Garrison Keillor</pre>
+    </pre>
+
+    <script>
+      var text="ACCOUNT CREATION SUCCESSFUL \nThank you for registering with ReBoo."
+      function myAccount() {
+        confirm(text);
+      }
+      
+    </script>
+  </body>
+</html>
