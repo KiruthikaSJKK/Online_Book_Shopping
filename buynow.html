@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ReBOO daily</title>
+    <link rel="stylesheet" type="text/css" href="HomeCSS.css">
+    <style>
+      #myaddress {
+        width: 300px;
+        background-color: rgba(173, 186, 91, 0.252);
+        margin-top:20px;
+        margin-left:20px;
+        padding:10px 10px;
+        line-height: 20px;
+        border:1px rgb(106, 143, 21) solid;
+        border-style:dotted;
+        color:whitesmoke;
+        display:none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      #myaddress input{
+        border:none;
+        width:170px;
+        height:20px;
+      }
+      #myaddress textarea{
+        border:none;
+        width:260px;
+        height:20px;
+      }
+      #addbut{
+        margin-top: 115px;
+        background-color: rgb(150, 162, 77);
+        border:none;
+        margin-left:70px;
+        width:200px;
+        height:40px;
+        font-size: 15px;
+        color:white;
+      }
+      #mypayment{
+        width: 300px;
+        background-color: rgba(173, 186, 91, 0.252);
+        margin-top:20px;
+        margin-left:20px;
+        padding:0px 10px 20px 10px;
+        line-height: 25px;
+        color:rgb(60, 58, 58);
+        border:1px rgb(106, 143, 21) solid;
+        border-style:dotted;
+        font-size: 17px;
+        color:whitesmoke;
+        display:none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      #paybut{
+        margin-top: 35px;
+        background-color: rgb(150, 162, 77);
+        border:none;
+        margin-left:70px;
+        width:200px;
+        height:40px;
+        font-size: 15px;
+        color:white;
+      }
+      #orderbut{
+        margin-top: 35px;
+        background-color: rgb(150, 162, 77);
+        border:none;
+        margin-left:70px;
+        width:200px;
+        height:40px;
+        font-size: 15px;
+        color:white;
+      }
+      #myOrder{
+        width: 300px;
+        background-color: rgba(173, 186, 91, 0.252);
+        margin-top:20px;
+        margin-left:20px;
+        padding:0px 10px 20px 10px;
+        line-height: 0px;
+        color:rgb(60, 58, 58);
+        border:1px rgb(106, 143, 21) solid;
+        border-style:dotted;
+        font-size: 15px;
+        color:white;
+        display:none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      
+      .ordernowtext{
+        position: absolute;
+        top:0px;
+        color:yellow;
+        font-size: 20px;
+        margin-top: 100px;
+        margin-left: 400px;
+        width:400px;
+        font-family:cursive;
+      }
+      #safe{
+        color: rgb(223, 222, 222);
+        position: absolute;
+        top:145px;
+        margin-left: 60px;
+      }
+     
+    </style>
+  </head>
+  <body style="margin: 0;background-color: white; background-image: url('image/buynowbg2.jpeg');">
+    <div class="home1">
+      <a href="../Homepage.html" id="navtab">My Profile</a>
+      <a href="../Helpcenter.html" id="navtab">Help center</a>
+      <a href="../Aboutus.html" id="navtab">About us</a>
+      <a href="../Homepageprofile.html" id="navtab">Home</a>
+      <img src="image/searchicon.png" id="searchlogo" />
+      <input type="search" id="searchtab" placeholder="Search........"/>
+      <img src="image/catlogo.png" id="Weblogo" style="width:65px; height:60px;"/>
+      <a id="Webtitle">ReBOO</a>
+    </div>
+    
+    <button id="addbut" onclick="myAddress()">Add or Change Address</button>
+        <div id="myaddress">
+          <form>
+            <label>Full Name (Required)*</label><br/>
+            <input type="text"><br/><br/>
+            <label>Phone Number (Required)*</label><br/>
+            <input type="tel"><br/><br/>
+            <label>Alternate Phone Number</label><br/>
+            <input type="tel"><br/><br/>
+            <label>Pincode(Required)*</label><br/>
+            <input type="number"><br/><br/>
+            <label>State(Required)*</label><br/>
+            <input type="text"><br/><br/>
+            <label>City (Required)*</label><br/>
+            <input type="text"><br/><br/>
+            <label>House No. Building Name (Required)*</label><br/>
+            <input type="text"><br/><br/>
+            <label>Road name, Area, Colony (Required)*</label><br/>
+            <textarea type="text"></textarea><br/><br/>
+            <label>Add Nearby Famous Shop/Mall/Landmark</label><br/>
+            <textarea type="text"></textarea><br/><br/>
+          </form>
+        </div>
+        <br/>
+      <button id="paybut" onclick="myPayment()">Payment Option</button>
+      <div id="mypayment">
+        <p>All Payment Options</p>  
+         <input type="radio" id="upi" name="pay">
+         <label for="upi">UPI</label><br/>
+         <input type="radio" id="wallet" name="pay">
+         <label for="wallet">Wallets</label><br/>
+         <input type="radio" id="credit" name="pay">
+         <label for="credit">Credit/ Debit/ ATM Card</label><br/>
+         <input type="radio" id="banking" name="pay">
+         <label for="banking">Net Banking</label><br/>
+         <input type="radio" id="cash" name="pay">
+         <label for="cash">Cash on Delivery</label><br/>
+         <input type="radio" id="emi" name="pay" disabled>
+         <label for="emi" style="color: grey;">EMI (Easy Installments)</label><br/>
+       </div>
+       <br/>
+       <button id="orderbut" onclick="myOrder()">Order Summary</button>
+      <div id="myOrder">
+        <p>Price Details</p> 
+        <br/>
+       <pre><p>Price (1 item)         Rs.275</p>
+        <p>Discount              -Rs.46</p>
+        <p>Delivery Charges       Rs.40</p>
+        <p><b>Total Amount           Rs.269</b></p>
+        </pre>
+        <button type="button" onclick="placeorder()" style="background-color: rgb(106, 143, 21);border-style: none;">Place order</button>
+         
+       </div>
+       
+      <div class="ordernowtext">
+         <div><pre>You can place order here Awide range of products
+are provided through our portal along with 
+offers on them. So don't hesitate
+and Place a order Now!.</pre></div>
+         <img src="image/safeandsecure.png" width="50px" height="60px">
+        <div id="safe">Safe and Secure Payments</div>
+        <img src="image/safepaylogo1.png" width="350px" height="100px" style="background-color: white;">
+      </div>
+      <footer>
+        <p>@ All Rights Reserved 2021-2022 Designed by Kiruthikasjkk</p>
+        <img src="image/fblogo.png" width="20px" height="20px">
+        <img src="image/linkedinlogo.png" width="20px" height="20px">
+        <img src="image/youtubelogo.png" width="20px" height="20px">
+      </footer>
+       <script>
+      function myAddress() {
+        var x = document.getElementById("myaddress");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      function myPayment() {
+        var x = document.getElementById("mypayment");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      function myOrder() {
+        var x = document.getElementById("myOrder");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      var text="Your Order is Confirmed"
+      function placeorder() {
+        confirm(text);
+      }
+      </script>
+  </body>
+</html>
